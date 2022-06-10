@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+ background-color: #fcde67;
+}
+.main{
+
+ margin-left: 250px;
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+     border-radius: 18px;
+  background: #5bccf6;
+
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 10px;
+  text-align: center;
+ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: #87ceeb;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  margin-right: 210px;
+  width: 150px;
+  align-content: center;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+
+.school_card{
+margin-left: 300px;
+}
+
+</style>
+<body>
+
+<div class="main">
+<form action="/predict2" id="mf" method="post">
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="static/am.png">
+</div>
+    <!--
+<div class="title">
+ <h1>
+Adult Mortality</h1>
+</div> -->
+<div class="des">
+ <input  type="text" name="am" placeholder="enter Adult mortality" required="required" form="mf" value={{default_values[1]}} />
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="static/bmi.png">
+</div>
+    <!--
+<div class="title">
+ <h1>
+BMI</h1>
+</div> -->
+<div class="des">
+ <input type="text" name="bmi" placeholder="enter the BMI" required="required" form="mf" value={{default_values[2]}} />
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="static/dp.png">
+</div>
+<!--<div class="title">-->
+<!-- <h1>-->
+<!--Diphtheria</h1>-->
+<!--</div>-->
+<div class="des">
+ <input type="text" name="dp" placeholder="enter the Diphtheria" required="required" form="mf" value={{default_values[3]}} />
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="static/hiv.png">
+</div>
+<!--<div class="title">-->
+<!-- <h1>-->
+<!--Hiv and Aids</h1>-->
+<!--</div>-->
+<div class="des">
+ <input type="text" name="haa" placeholder="enter the Hiv and Aids" required="required" form="mf" value={{default_values[4]}} />
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="static/tn.png">
+</div>
+<!--<div class="title">-->
+<!-- <h1>-->
+<!--Thinness 10-19 Years</h1>-->
+<!--</div>-->
+<div class="des">
+ <input type="text" name="tn" placeholder="enter the Thinness 10-19 Years" required="required" form="mf" value={{default_values[5]}} />
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="static/in.png">
+</div>
+<!--<div class="title">-->
+<!-- <h1>-->
+<!--Income Composition Of Resources</h1>-->
+<!--</div>-->
+<div class="des">
+<input type="text" name="icr" placeholder="enter the Income Composition Of Resources" required="required" form="mf" value={{default_values[6]}} />
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card school_card">
+
+<div class="image">
+   <img src="static/sc.png">
+</div>
+<!--<div class="title">-->
+<!-- <h1>-->
+<!--Schooling</h1>-->
+<!--</div>-->
+<div class="des">
+ <input type="text" name="sc" placeholder="enter the Schooling" required="required" form="mf" value={{default_values[7]}} />
+
+</div>
+</div>
+<!--cards -->
+
+
+
+<!--cards -->
+
+
+<center>
+<button align="center" type="submit" name="Submit" value="Submit" class="btn btn-secondary"> Submit.</button>
+</center>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+    <script type="text/javascript"></script>
+    <title>Result page</title>
+</head>
+<body>
+<ul>
+    {% for host in hosts %}
+
+    <li>In the Host text box, you entered: {{ host }}</li>
+
+    {% endfor %}
+</ul>
+
+</body>
+</html>

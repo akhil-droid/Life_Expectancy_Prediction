@@ -1,0 +1,44 @@
+body{
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+
+
+.card {
+  display: grid;
+  float: left;
+  grid-template-columns: 250px;
+  grid-template-rows: 150px 210px ;
+  grid-template-areas: "image" "text" ;
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+}
+
+.card-image {
+  grid-area: image;
+  background: url("map.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}

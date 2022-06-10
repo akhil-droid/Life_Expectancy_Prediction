@@ -1,0 +1,71 @@
+body{
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fcde67;
+}
+
+
+
+.card {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 210px 150px ;
+  grid-template-areas: "image" "text" ;
+
+ border-radius: 18px;
+  background: #5bccf6;
+  -webkit-box-shadow: 2px 8px 28px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 8px 28px -6px rgba(0,0,0,0.75);
+box-shadow: 2px 8px 28px -6px rgba(0,0,0,0.75);
+  font-family: roboto;
+  text-align: center;
+  color: black;
+}
+
+.card-image {
+  grid-area: image;
+  width: 250px;
+  height: 210px;
+  background: url("background-earth-continents-worl.jpg");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: cover;
+  object-fit: fill;
+}
+.card-image2 {
+  grid-area: image;
+  background: url("year.png");
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: cover;
+}
+.card:hover {
+
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: #1C191A;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+  color: white;
+}
+button:hover{
+  background-color: white;
+  color: black;
+  transition: .5s;
+  cursor: pointer;
+}
